@@ -6,13 +6,13 @@
 /*   By: mohael-h <mohael-h@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 10:32:49 by mohael-h          #+#    #+#             */
-/*   Updated: 2026/10/19 13:32:51 by mohael-h         ###   ########.fr       */
+/*   Updated: 2026/10/22 13:15:38 by mohael-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	size_t 	ml_fs(char const *s0, char const *s)
+static size_t	ml_fs(char const *s0, char const *s)
 {
 	size_t	i;
 	size_t	n;
@@ -22,7 +22,7 @@ static	size_t 	ml_fs(char const *s0, char const *s)
 	while (s0[i])
 	{
 		while (s[n] && s[n] != s0[i])
-				n++;
+			n++;
 		if (s[n] == '\0')
 			return (i);
 		n = 0;
@@ -34,7 +34,7 @@ static	size_t 	ml_fs(char const *s0, char const *s)
 static	size_t	ml_fe(char const *s2, char const *s3, size_t len)
 {
 	size_t	n;
-	
+
 	n = 0;
 	while (len > 0)
 	{
@@ -54,7 +54,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*alm;
 	size_t	start1;
 	size_t	end1;
-	
+
 	if (set[0] == '\0')
 		return (ft_strdup(s1));
 	len1 = ft_strlen(s1);

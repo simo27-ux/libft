@@ -6,7 +6,7 @@
 /*   By: mohael-h <mohael-h@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 13:59:30 by mohael-h          #+#    #+#             */
-/*   Updated: 2026/10/19 15:03:58 by mohael-h         ###   ########.fr       */
+/*   Updated: 2026/10/22 13:24:13 by mohael-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	while (s[i])
 	{
 		alm[i] = f(i, s[i]);
-		i++; 
+		i++;
 	}
 	alm[i] = '\0';
 	return (alm);
