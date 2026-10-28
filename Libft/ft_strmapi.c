@@ -6,7 +6,7 @@
 /*   By: mohael-h <mohael-h@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 13:59:30 by mohael-h          #+#    #+#             */
-/*   Updated: 2026/10/22 13:24:13 by mohael-h         ###   ########.fr       */
+/*   Updated: 2026/10/28 17:34:27 by mohael-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
-	size_t	len;
-	char	*alm;
+	unsigned int	i;
+	size_t			len;
+	char			*alm;
 
 	if (s == NULL || f == NULL)
 		return (NULL);

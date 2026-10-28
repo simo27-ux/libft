@@ -6,7 +6,7 @@
 /*   By: mohael-h <mohael-h@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 10:43:05 by mohael-h          #+#    #+#             */
-/*   Updated: 2026/10/22 13:12:22 by mohael-h         ###   ########.fr       */
+/*   Updated: 2026/10/26 17:15:21 by mohael-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (s[i] == '\0')
 	{
-		if (c == '\0')
+		if ((unsigned char)c == '\0')
 			return (s + i);
 		return (NULL);
 	}
